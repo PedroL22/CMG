@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Carousel arrows */
+.carousel-arrows .carousel-control-prev,
+.carousel-arrows .carousel-control-next {
+  z-index: 10;
+}
+
+/* Tailwind CSS 'text-center' bug */
+@media (max-width: 1024px) {
+  .text-center-bug {
+    text-align: center;
+  }
+}
+
+/* Carousel arrows */
+.scrolled {
+  background-color: black;
+  opacity: 0.8;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
