@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../images/logo-white2.png";
+import Logo from "../images/logo.png";
 import { useMediaQuery } from "react-responsive";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
@@ -34,16 +34,17 @@ export default function Header() {
             <Image
               src={Logo}
               alt="logo"
-              className="w-36 h-36 object-cover mx-4"
+              placeholder="blur"
+              className="w-28 h-28 object-cover mx-4 mt-2"
             />
           </Link>
           <div className="flex px-10 py-12">
             <Link
               scroll={false}
-              href="/#accueil"
+              href='/#accueil'
               className="uppercase no-underline text-white text-2xl font-semibold mx-2 whitespace-nowrap"
             >
-              accueil
+              accueils
             </Link>
             <Link
               scroll={false}
@@ -75,7 +76,8 @@ export default function Header() {
           <Link href="/">
             <Image
               src={Logo}
-              alt="logo"
+                alt="logo"
+                placeholder="blur"
               className="w-16 h-16  object-cover mx-1"
             />
           </Link>

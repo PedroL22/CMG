@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="font-sans">
       <Head>
-        <title>Custom Peinture et Nettoyage</title>
+        <title>Custom Marco Guillermo</title>
         <meta
           name="description"
           content="Service de NETTOYAGE et de PEINTURE RÉSIDENTIEL"
@@ -35,6 +35,7 @@ export default function Home() {
             <Image
               src={Section2Image}
               alt="blue living room accent wall"
+              placeholder="blur"
               className="object-cover h-48 mt-2  sm:h-56 md:h-72 lg:h-80 lg:w-[27rem]"
             />
             <div className="text-center-bug lg:text-left lg:-mt-11">
@@ -43,9 +44,7 @@ export default function Home() {
                 BEAUX ET SPECTACULAIRES
               </h2>
               <p className="text-sm sm:text-base md:text-lg">
-                C.P.N (Custom Peinture et Nettoyage) est une entreprise
-                spécialisée dans le nettoyage commercial et la peinture
-                intérieure résidentiel, depuis 2018 offrant le mieux, on est
+                C.M.G (Custom Marco Guillermo) est une entreprise de rénovation résidentielle, depuis 2018 offrant le mieux, on est
                 engagé avec l&apos;excellence en inspirant les clients avec
                 notre travailte.
               </p>
@@ -74,6 +73,7 @@ export default function Home() {
             <Image
               src={Section3Image}
               alt="blue living room accent wall"
+              placeholder="blur"
               className="object-cover h-48 mb-2 lg:mb-0 sm:h-56 md:h-72 lg:h-80 lg:w-[27rem] border-4 border-white"
             />
           </div>
@@ -83,6 +83,7 @@ export default function Home() {
             <Image
               src={Section4Image}
               alt="blue living room accent wall"
+              placeholder="blur"
               className="object-cover h-48 mt-2 sm:h-56 md:h-72 lg:h-80 lg:w-[27rem]"
             />
             <div className="text-center-bug lg:text-left">

@@ -25,6 +25,7 @@ export default function HeroCarousel() {
           <Image
             src={HeroImage1}
             alt=""
+            placeholder="blur"
             className="w-full h-[30vh] sm:h-[40vh] md:h-[720px] object-cover"
           />
         </Carousel.Item>
@@ -33,6 +34,7 @@ export default function HeroCarousel() {
           <Image
             src={HeroImage2}
             alt=""
+            placeholder="blur"
             className="w-full h-[30vh] sm:h-[40vh] md:h-[720px] object-cover"
           />
         </Carousel.Item>
@@ -41,6 +43,7 @@ export default function HeroCarousel() {
           <Image
             src={HeroImage3}
             alt=""
+            placeholder="blur"
             className="w-full h-[30vh] sm:h-[40vh] md:h-[720px] object-cover"
           />
         </Carousel.Item>
