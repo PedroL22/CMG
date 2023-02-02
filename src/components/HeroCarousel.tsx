@@ -11,7 +11,7 @@ export default function HeroCarousel() {
       <div className="absolute z-10">
         <div className="relative flex flex-col">
           <h1 className="text-white text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center mx-[15vw] max-w-[900px]">
-            Service de NETTOYAGE et de PEINTURE RÉSIDENTIEL
+            Services de RÉNOVATION RÉSIDENTIELLE
           </h1>
         </div>
       </div>

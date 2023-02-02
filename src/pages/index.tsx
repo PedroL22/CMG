@@ -13,11 +13,11 @@ export default function Home() {
         <title>Custom Marco Guillermo</title>
         <meta
           name="description"
-          content="Service de NETTOYAGE et de PEINTURE RÉSIDENTIEL"
+          content="Services de RÉNOVATION RÉSIDENTIELLE"
         />
         <meta
           name="keywords"
-          content="Montréal, nettoyage, peinture résidentiel, cleaning, house painting"
+          content="Montréal, nettoyage, peinture résidentiel, renovation residentielle, cleaning, house painting"
         />
         <meta name="author" content="Marco Antonio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
