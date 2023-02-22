@@ -36,7 +36,7 @@ export default function Header() {
 							src={Logo}
 							alt='logo'
 							placeholder='blur'
-							className='w-16 h-16  object-cover mx-1'
+							className='w-16 h-16 object-cover mx-1'
 						/>
 					</Link>
 					<div className='flex -ml-[100vw]'>

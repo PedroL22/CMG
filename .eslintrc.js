@@ -8,7 +8,6 @@ module.exports = {
 		'xo',
 		'eslint:recommended',
 		'next',
-		'prettier',
 	],
 	overrides: [
 		{
