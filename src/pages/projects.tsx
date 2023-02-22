@@ -21,6 +21,10 @@ import image17 from '../images/projects/17.jpeg';
 import image18 from '../images/projects/18.jpeg';
 import image19 from '../images/projects/19.jpeg';
 import image20 from '../images/projects/20.jpeg';
+import image21 from '../images/projects/21.jpeg';
+import image22 from '../images/projects/22.jpeg';
+import image23 from '../images/projects/23.jpeg';
+import image24 from '../images/projects/24.jpeg';
 
 export default function Projects() {
 	return (
@@ -58,6 +62,8 @@ export default function Projects() {
 				<ImageSlider Image1={image15} Image2={image16}/>
 				<ImageSlider Image1={image17} Image2={image18}/>
 				<ImageSlider Image1={image19} Image2={image20}/>
+				<ImageSlider Image1={image21} Image2={image22}/>
+				<ImageSlider Image1={image23} Image2={image24}/>
 			</div>
 		</div>
 	);
