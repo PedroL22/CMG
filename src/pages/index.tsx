@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Section2Image from '../images/blue-living-room-accent-wall.jpeg';
 import Section3Image from '../images/gray-living-room-accent-wall.jpeg';
 import Section4Image from '../images/blue-living-room-accent-wall2.jpeg';
-import Footer from '../components/Footer';
 
 export default function Home() {
 	return (
@@ -106,7 +105,6 @@ export default function Home() {
 					</div>
 				</section>
 			</main>
-			<Footer/>
 		</div>
 	);
 }
