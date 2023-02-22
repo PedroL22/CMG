@@ -11,6 +11,16 @@ import image7 from '../images/projects/7.jpeg';
 import image8 from '../images/projects/8.jpeg';
 import image9 from '../images/projects/9.jpeg';
 import image10 from '../images/projects/10.jpeg';
+import image11 from '../images/projects/11.jpeg';
+import image12 from '../images/projects/12.jpeg';
+import image13 from '../images/projects/13.jpeg';
+import image14 from '../images/projects/14.jpeg';
+import image15 from '../images/projects/15.jpeg';
+import image16 from '../images/projects/16.jpeg';
+import image17 from '../images/projects/17.jpeg';
+import image18 from '../images/projects/18.jpeg';
+import image19 from '../images/projects/19.jpeg';
+import image20 from '../images/projects/20.jpeg';
 
 export default function Projects() {
 	return (
@@ -43,6 +53,11 @@ export default function Projects() {
 				<ImageSlider Image1={image5} Image2={image6}/>
 				<ImageSlider Image1={image7} Image2={image8}/>
 				<ImageSlider Image1={image9} Image2={image10}/>
+				<ImageSlider Image1={image11} Image2={image12}/>
+				<ImageSlider Image1={image13} Image2={image14}/>
+				<ImageSlider Image1={image15} Image2={image16}/>
+				<ImageSlider Image1={image17} Image2={image18}/>
+				<ImageSlider Image1={image19} Image2={image20}/>
 			</div>
 		</div>
 	);
