@@ -27,8 +27,7 @@ export default function Header() {
 	}
 
 	return isMobile ? (
-
-		<div className='fixed z-20 w-full font-sans header'>
+		<div className='fixed z-20 w-full font-sans header h-16'>
 			<div className='max-w-screen-xl mx-auto'>
 				<div className='flex justify-between'>
 					<Link href='/'>

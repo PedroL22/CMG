@@ -28,8 +28,12 @@ export default function Projects() {
 				<meta name='viewport' content='width=device-width, initial-scale=1' />
 				<link rel='icon' href='/favicon.png' />
 			</Head>
-			{/* <div className='bg-black fixed z-0 w-full font-sans header h-32' /> */}
-			<ImageSlider Image1={test} Image2={test2}/>
+			<div className='bg-black fixed z-10 w-full font-sans header h-16 md:h-32' />
+			<div className='pt-24 md:pt-44 px-3 max-w-7xl mx-auto flex flex-col gap-3 md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3'>
+				<ImageSlider Image1={test} Image2={test2}/>
+				<ImageSlider Image1={test} Image2={test2}/>
+				<ImageSlider Image1={test} Image2={test2}/>
+			</div>
 		</div>
 	);
 }

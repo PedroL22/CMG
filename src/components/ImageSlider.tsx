@@ -47,39 +47,37 @@ export default function ImageSlider({Image1, Image2}: SliderProps) {
 	};
 
 	return (
-		<div className='px-4 select-none'>
-			<div ref={imageContainer} className='max-w-lg w-full mx-auto mt-32 relative'>
-				<Image
-					src={Image1}
-					alt=''
-					className='object-cover h-96 pointer-events-none'
-				/>
-				<Image
-					src={Image2}
-					alt=''
-					className='object-cover h-96 absolute inset-0 pointer-events-none'
-					style={{
-						clipPath: `polygon(
+		<div ref={imageContainer} className='select-none max-w-lg w-full mx-auto relative'>
+			<Image
+				src={Image1}
+				alt=''
+				className='object-cover h-96 pointer-events-none'
+			/>
+			<Image
+				src={Image2}
+				alt=''
+				className='object-cover h-96 absolute inset-0 pointer-events-none'
+				style={{
+					clipPath: `polygon(
               0 0,
               ${imageRevealFraction * 100}% 0,
               ${imageRevealFraction * 100}% 100%,
               0 100%
               )`}}
-				/>
-				<div className='absolute inset-y-0'
-					style={{left: `${imageRevealFraction * 100}%`}}>
-					<div className='relative h-full'>
-						<div className='absolute inset-y-0 bg-white w-0.5 -ml-px opacity-50'></div>
-						<div
-							onMouseDown={handleMouseDown}
-							onTouchMove={handleTouchMove}
-							className='h-12 w-12 -ml-6 -mt-6 rounded-full bg-white absolute top-1/2 shadow-xl flex items-center justify-center cursor-pointer'
-							style={{touchAction: 'none'}}>
-							<HiSelector size={24} className='text-gray-400 rotate-90 transform'/>
-						</div>
-					</div></div>
+			/>
+			<div className='absolute inset-y-0'
+				style={{left: `${imageRevealFraction * 100}%`}}>
+				<div className='relative h-full'>
+					<div className='absolute inset-y-0 bg-white w-0.5 -ml-px opacity-50'></div>
+					<div
+						onMouseDown={handleMouseDown}
+						onTouchMove={handleTouchMove}
+						className='h-12 w-12 -ml-6 -mt-6 rounded-full bg-white absolute top-1/2 shadow-xl flex items-center justify-center cursor-pointer'
+						style={{touchAction: 'none'}}>
+						<HiSelector size={24} className='text-gray-400 rotate-90 transform'/>
+					</div>
+				</div></div>
 
-			</div>
 		</div>
 	);
 }
