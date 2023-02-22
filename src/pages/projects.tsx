@@ -1,8 +1,16 @@
 import React from 'react';
 import Head from 'next/head';
 import ImageSlider from '@/components/ImageSlider';
-import test from '../images/projects/1.jpeg';
-import test2 from '../images/projects/2.jpeg';
+import image1 from '../images/projects/1.jpeg';
+import image2 from '../images/projects/2.jpeg';
+import image3 from '../images/projects/3.jpeg';
+import image4 from '../images/projects/4.jpeg';
+import image5 from '../images/projects/5.jpeg';
+import image6 from '../images/projects/6.jpeg';
+import image7 from '../images/projects/7.jpeg';
+import image8 from '../images/projects/8.jpeg';
+import image9 from '../images/projects/9.jpeg';
+import image10 from '../images/projects/10.jpeg';
 
 export default function Projects() {
 	return (
@@ -29,10 +37,12 @@ export default function Projects() {
 				<link rel='icon' href='/favicon.png' />
 			</Head>
 			<div className='bg-black fixed z-10 w-full font-sans header h-16 md:h-32' />
-			<div className='pt-24 md:pt-44 px-3 max-w-7xl mx-auto flex flex-col gap-3 md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3'>
-				<ImageSlider Image1={test} Image2={test2}/>
-				<ImageSlider Image1={test} Image2={test2}/>
-				<ImageSlider Image1={test} Image2={test2}/>
+			<div className='pt-24 pb-4 md:pt-44 px-3 max-w-7xl mx-auto flex flex-col gap-3 md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3'>
+				<ImageSlider Image1={image1} Image2={image2}/>
+				<ImageSlider Image1={image3} Image2={image4}/>
+				<ImageSlider Image1={image5} Image2={image6}/>
+				<ImageSlider Image1={image7} Image2={image8}/>
+				<ImageSlider Image1={image9} Image2={image10}/>
 			</div>
 		</div>
 	);

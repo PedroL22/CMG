@@ -49,14 +49,14 @@ export default function ImageSlider({Image1, Image2}: SliderProps) {
 	return (
 		<div ref={imageContainer} className='select-none max-w-lg w-full mx-auto relative'>
 			<Image
-				src={Image1}
-				alt=''
-				className='object-cover h-96 pointer-events-none'
-			/>
-			<Image
 				src={Image2}
 				alt=''
-				className='object-cover h-96 absolute inset-0 pointer-events-none'
+				className='object-cover h-56 pointer-events-none'
+			/>
+			<Image
+				src={Image1}
+				alt=''
+				className='object-cover h-56 absolute inset-0 pointer-events-none'
 				style={{
 					clipPath: `polygon(
               0 0,
