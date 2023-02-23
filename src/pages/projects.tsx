@@ -51,7 +51,7 @@ export default function Projects() {
 				<link rel='icon' href='/favicon.png' />
 			</Head>
 			<div className='bg-black fixed z-10 w-full font-sans header h-16 md:h-32' />
-			<div className='pt-24 pb-4 md:pt-44 px-3 max-w-7xl mx-auto flex flex-col gap-3 md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3'>
+			<div className='pt-24 pb-4 md:pt-44 px-3 max-w-5xl mx-auto flex flex-col gap-3 md:grid md:grid-cols-2'>
 				<ImageSlider Image1={image1} Image2={image2}/>
 				<ImageSlider Image1={image3} Image2={image4}/>
 				<ImageSlider Image1={image5} Image2={image6}/>

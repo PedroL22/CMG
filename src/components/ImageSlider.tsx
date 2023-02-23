@@ -51,12 +51,12 @@ export default function ImageSlider({Image1, Image2}: SliderProps) {
 			<Image
 				src={Image2}
 				alt=''
-				className='object-cover h-56 pointer-events-none'
+				className='object-cover h-[23rem] pointer-events-none'
 			/>
 			<Image
 				src={Image1}
 				alt=''
-				className='object-cover h-56 absolute inset-0 pointer-events-none'
+				className='object-cover h-[23rem] absolute inset-0 pointer-events-none'
 				style={{
 					clipPath: `polygon(
               0 0,
