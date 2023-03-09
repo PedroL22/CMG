@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
 import Carousel from 'react-bootstrap/Carousel'
-import HeroImage1 from '../images/orange-living-room-accent-wall.jpg'
-import HeroImage2 from '../images/orange-living-room-accent-wall2.jpg'
-import HeroImage3 from '../images/orange-living-room-accent-wall3.jpg'
+import HeroImage1 from '../../images/orange-living-room-accent-wall.jpg'
+import HeroImage2 from '../../images/orange-living-room-accent-wall2.jpg'
+import HeroImage3 from '../../images/orange-living-room-accent-wall3.jpg'
 
 export default function HeroCarousel() {
   return (

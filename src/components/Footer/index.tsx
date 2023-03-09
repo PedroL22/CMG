@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className='font-sans h-40 bg-[#202020]'>
+    <footer className='font-sans h-20 bg-[#202020]'>
       <div className='mx-auto w-80 sm:w-[28rem] md:w-[36rem] lg:w-[55rem]'>
         <div className='flex justify-between mx-auto pt-4 px-16 md:px-36 lg:px-72'>
-          <div>
+          {/* <div>
             <a
               href='#'
               className='block text-white no-underline text-lg'
@@ -44,7 +44,7 @@ export default function Footer() {
             >
               teste
             </a>
-          </div>
+          </div> */}
         </div>
         <p className='text-white text-center pt-2 text-xs'>
           Made with <span className='text-red-600'>♥</span> by{' '}

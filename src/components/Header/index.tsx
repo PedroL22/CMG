@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import Logo from '../images/logo.png'
+import Logo from '../../images/logo.png'
 import { useMediaQuery } from 'react-responsive'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IoMdClose } from 'react-icons/io'
