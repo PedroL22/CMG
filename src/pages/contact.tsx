@@ -140,18 +140,27 @@ export default function Contact() {
                 <h2 className='flex font-normal text-sm'>+1 (514) 710-8532</h2>
               </div>
             </a>
+            <a href='tel:514 805-5539'>
+              <div className='flex'>
+                <AiOutlinePhone
+                  size={18}
+                  className='mt-0.5 -ml-0.5'
+                />
+                <h2 className='flex font-normal text-sm'>514 805-5539</h2>
+              </div>
+            </a>
             <hr />
             <h2 className='font-semibold text-base uppercase'>
               envoyez-nous un email
             </h2>
-            <a href='mailto:docmarques@yahoo.com'>
+            <a href='mailto:budget.cmg@gmail.com'>
               <div className='flex'>
                 <AiOutlineMail
                   size={16}
                   className='mt-0.5'
                 />
                 <h2 className='flex font-normal text-sm ml-0.5'>
-                  docmarques@yahoo.com
+                  budget.cmg@gmail.com
                 </h2>
               </div>
             </a>
