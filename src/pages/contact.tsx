@@ -61,6 +61,7 @@ export default function Contact() {
         />
       </Head>
 
+      <div className='bg-black fixed z-10 w-full font-sans header h-16 md:h-32' />
       <div className='flex'>
         <div className='pt-20 md:pt-36 mx-auto md:flex gap-11'>
           <div className='max-w-xs'>
