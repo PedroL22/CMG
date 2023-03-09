@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Head from 'next/head'
 import emailjs from 'emailjs-com'
-import { BsWhatsapp } from 'react-icons/bs'
+import { BsWhatsapp, BsFacebook } from 'react-icons/bs'
 import { AiOutlinePhone } from 'react-icons/ai'
 import { AiOutlineMail } from 'react-icons/ai'
 
@@ -120,7 +120,10 @@ export default function Contact() {
             <h2 className='font-semibold text-base uppercase'>
               contactez-nous
             </h2>
-            <a href='https://wa.me/15147108532'>
+            <a
+              href='https://wa.me/15147108532'
+              className='no-underline'
+            >
               <div className='flex'>
                 <BsWhatsapp
                   size={14}
@@ -129,18 +132,36 @@ export default function Contact() {
                 <h2 className='flex font-normal text-sm ml-0.5'>Whatsapp</h2>
               </div>
             </a>
+            <a
+              href='https://www.facebook.com/renovation.cmg'
+              className='no-underline'
+            >
+              <div className='flex'>
+                <BsFacebook
+                  size={14}
+                  className='mt-1'
+                />
+                <h2 className='flex font-normal text-sm ml-0.5'>Facebook</h2>
+              </div>
+            </a>
             <hr />
             <h2 className='font-semibold text-base uppercase'>appelez-nous</h2>
-            <a href='tel:+1 (514) 710-8532'>
+            <a
+              href='tel:514 710-8532'
+              className='no-underline'
+            >
               <div className='flex'>
                 <AiOutlinePhone
                   size={18}
                   className='mt-0.5 -ml-0.5'
                 />
-                <h2 className='flex font-normal text-sm'>+1 (514) 710-8532</h2>
+                <h2 className='flex font-normal text-sm'>514 710-8532</h2>
               </div>
             </a>
-            <a href='tel:514 805-5539'>
+            <a
+              href='tel:514 805-5539'
+              className='no-underline'
+            >
               <div className='flex'>
                 <AiOutlinePhone
                   size={18}
@@ -153,7 +174,10 @@ export default function Contact() {
             <h2 className='font-semibold text-base uppercase'>
               envoyez-nous un email
             </h2>
-            <a href='mailto:budget.cmg@gmail.com'>
+            <a
+              href='mailto:budget.cmg@gmail.com'
+              className='no-underline'
+            >
               <div className='flex'>
                 <AiOutlineMail
                   size={16}
