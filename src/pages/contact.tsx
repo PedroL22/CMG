@@ -60,10 +60,9 @@ export default function Contact() {
           href='/favicon.png'
         />
       </Head>
-
       <div className='bg-black fixed z-10 w-full font-sans header h-16 md:h-32' />
-      <div className='flex'>
-        <div className='pt-20 md:pt-36 mx-auto md:flex gap-11'>
+      <div className='flex min-h-[90vh]'>
+        <div className='pt-24 md:pt-44 mx-auto md:flex gap-11'>
           <div className='max-w-xs'>
             <h2 className='max-w-sm text-2xl'>
               Appelez-nous ou remplissez le formulaire pour démarrer votre

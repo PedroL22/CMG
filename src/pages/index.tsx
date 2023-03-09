@@ -31,7 +31,7 @@ export default function Home() {
           href='/favicon.png'
         />
       </Head>
-      <main>
+      <main className='min-h-screen'>
         <section id='accueil'>
           <HeroCarousel />
         </section>

@@ -60,7 +60,7 @@ export default function Projects() {
         />
       </Head>
       <div className='bg-black fixed z-10 w-full font-sans header h-16 md:h-32' />
-      <div className='pt-24 pb-4 md:pt-44 px-3 max-w-5xl mx-auto flex flex-col gap-3 md:grid md:grid-cols-2'>
+      <div className='pt-24 pb-4 md:pt-44 px-3 max-w-5xl mx-auto flex flex-col gap-3 md:grid md:grid-cols-2 min-h-screen'>
         <ImageSlider
           Image1={image1}
           Image2={image2}
