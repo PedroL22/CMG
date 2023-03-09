@@ -81,7 +81,7 @@ export default function Header() {
                   projets
                 </Link>
                 <Link
-                  href='/'
+                  href='/contact'
                   onClick={() => {
                     setIsOpen(false)
                   }}
@@ -137,7 +137,7 @@ export default function Header() {
               projets
             </Link>
             <Link
-              href='/'
+              href='/contact'
               className='uppercase no-underline text-white text-2xl font-semibold mx-2 whitespace-nowrap'
             >
               contact
