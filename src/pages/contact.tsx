@@ -141,7 +141,7 @@ export default function Contact() {
                   size={14}
                   className='mt-1'
                 />
-                <h2 className='flex font-normal text-sm ml-0.5'>Facebook</h2>
+                <h2 className='flex font-normal text-sm ml-1'>Facebook</h2>
               </div>
             </a>
             <hr />
