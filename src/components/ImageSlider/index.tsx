@@ -1,6 +1,7 @@
 import React, { type TouchEvent, useRef, useState } from 'react'
 import Image, { type StaticImageData } from 'next/image'
 import { HiSelector } from 'react-icons/hi'
+import useModal from '@/stores/useModal'
 
 type SliderProps = {
   Image1: StaticImageData
@@ -49,29 +50,63 @@ export default function ImageSlider({ Image1, Image2 }: SliderProps) {
     slide(event.touches.item(0).clientX)
   }
 
+  const { setModal, setModalImage, setModalTitle } = useModal()
+
+  const handleClickImage1 = () => {
+    setModal(true)
+    setModalImage(Image1)
+    setModalTitle('Avant')
+  }
+
+  const handleClickImage2 = () => {
+    setModal(true)
+    setModalImage(Image2)
+    setModalTitle('Après')
+  }
+
   return (
     <div
       ref={imageContainer}
       className='select-none max-w-lg w-full mx-auto relative'
     >
-      <Image
-        src={Image2}
-        alt=''
-        className='object-cover h-[23rem] pointer-events-none'
-      />
-      <Image
-        src={Image1}
-        alt=''
-        className='object-cover h-[23rem] absolute inset-0 pointer-events-none'
-        style={{
-          clipPath: `polygon(
+      <div className='flex justify-start'>
+        <div
+          className='bg-black opacity-70 w-1/2 h-20 absolute z-10 top-72'
+          onClick={handleClickImage1}
+        >
+          <h3 className='text-center mt-3 opacity-100 text-white cursor-pointer hover:underline'>
+            Avant
+          </h3>
+        </div>
+        <Image
+          src={Image2}
+          alt=''
+          className='object-cover h-[23rem] pointer-events-none'
+        />
+      </div>
+      <div className='flex justify-end'>
+        <div
+          className='bg-black opacity-70 w-1/2 h-20 absolute z-10 top-72'
+          onClick={handleClickImage2}
+        >
+          <h3 className='text-center mt-3 opacity-100 text-white cursor-pointer hover:underline'>
+            Après
+          </h3>
+        </div>
+        <Image
+          src={Image1}
+          alt=''
+          className='object-cover h-[23rem] absolute inset-0 pointer-events-none'
+          style={{
+            clipPath: `polygon(
               0 0,
               ${imageRevealFraction * 100}% 0,
               ${imageRevealFraction * 100}% 100%,
               0 100%
               )`,
-        }}
-      />
+          }}
+        />
+      </div>
       <div
         className='absolute inset-y-0'
         style={{ left: `${imageRevealFraction * 100}%` }}
