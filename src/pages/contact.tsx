@@ -122,7 +122,8 @@ export default function Contact() {
             </h2>
             <a
               href='https://wa.me/15147108532'
-              className='no-underline'
+              target='_blank'
+              className='no-underline hover:underline'
             >
               <div className='flex'>
                 <BsWhatsapp
@@ -134,7 +135,8 @@ export default function Contact() {
             </a>
             <a
               href='https://www.facebook.com/renovation.cmg'
-              className='no-underline'
+              target='_blank'
+              className='no-underline hover:underline'
             >
               <div className='flex'>
                 <BsFacebook
@@ -148,7 +150,8 @@ export default function Contact() {
             <h2 className='font-semibold text-base uppercase'>appelez-nous</h2>
             <a
               href='tel:514 710-8532'
-              className='no-underline'
+              target='_blank'
+              className='no-underline hover:underline'
             >
               <div className='flex'>
                 <AiOutlinePhone
@@ -160,7 +163,8 @@ export default function Contact() {
             </a>
             <a
               href='tel:514 805-5539'
-              className='no-underline'
+              target='_blank'
+              className='no-underline hover:underline'
             >
               <div className='flex'>
                 <AiOutlinePhone
@@ -176,7 +180,8 @@ export default function Contact() {
             </h2>
             <a
               href='mailto:budget.cmg@gmail.com'
-              className='no-underline'
+              target='_blank'
+              className='no-underline hover:underline'
             >
               <div className='flex'>
                 <AiOutlineMail
