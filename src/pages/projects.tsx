@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Head from 'next/head'
 import ImageSlider from '@/components/ImageSlider'
 import image1 from '../images/projects/1.jpeg'
@@ -63,7 +63,7 @@ export default function Projects() {
           href='/favicon.png'
         />
       </Head>
-      <div className='bg-black fixed z-10 w-full font-sans header h-16 md:h-32' />
+      <div className='bg-black fixed z-20 w-full font-sans header h-16 md:h-32' />
       <ImageModal show={modal} />
       <div className='pt-24 pb-4 md:pt-44 px-3 max-w-5xl mx-auto flex flex-col gap-3 md:grid md:grid-cols-2 min-h-screen'>
         <ImageSlider
