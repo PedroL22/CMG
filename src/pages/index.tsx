@@ -43,7 +43,6 @@ export default function Home() {
             <Image
               src={Section2Image}
               alt='blue living room accent wall'
-              placeholder='blur'
               className='object-cover h-48 mt-2  sm:h-56 md:h-72 lg:h-80 lg:w-[27rem]'
             />
             <div className='text-center-bug lg:text-left lg:-mt-11'>
@@ -81,7 +80,6 @@ export default function Home() {
             <Image
               src={Section3Image}
               alt='blue living room accent wall'
-              placeholder='blur'
               className='object-cover h-48 mb-2 lg:mb-0 sm:h-56 md:h-72 lg:h-80 lg:w-[27rem] border-4 border-white'
             />
           </div>
@@ -91,7 +89,6 @@ export default function Home() {
             <Image
               src={Section4Image}
               alt='blue living room accent wall'
-              placeholder='blur'
               className='object-cover h-48 mt-2 sm:h-56 md:h-72 lg:h-80 lg:w-[27rem]'
             />
             <div className='text-center-bug lg:text-left'>

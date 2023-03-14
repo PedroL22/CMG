@@ -21,29 +21,26 @@ export default function HeroCarousel() {
         className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] mx-auto carousel-arrows'
       >
         <Carousel.Item>
-          <div className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] absolute bg-gradient-to-t from-transparent to-black opacity-50'></div>
+          <div className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] absolute'></div>
           <Image
             src={HeroImage1}
             alt=''
-            placeholder='blur'
             className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] object-cover'
           />
         </Carousel.Item>
         <Carousel.Item>
-          <div className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] absolute bg-gradient-to-t from-transparent to-black opacity-50'></div>
+          <div className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] absolute'></div>
           <Image
             src={HeroImage2}
             alt=''
-            placeholder='blur'
             className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] object-cover'
           />
         </Carousel.Item>
         <Carousel.Item>
-          <div className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] absolute bg-gradient-to-t from-transparent to-black opacity-50'></div>
+          <div className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] absolute'></div>
           <Image
             src={HeroImage3}
             alt=''
-            placeholder='blur'
             className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] object-cover'
           />
         </Carousel.Item>
