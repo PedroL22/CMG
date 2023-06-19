@@ -123,6 +123,7 @@ export default function Contact() {
             <a
               href='https://wa.me/15147108532'
               target='_blank'
+              rel='noreferrer'
               className='no-underline hover:underline'
             >
               <div className='flex'>
@@ -136,6 +137,7 @@ export default function Contact() {
             <a
               href='https://www.facebook.com/renovation.cmg'
               target='_blank'
+              rel='noreferrer'
               className='no-underline hover:underline'
             >
               <div className='flex'>
@@ -151,6 +153,7 @@ export default function Contact() {
             <a
               href='tel:514 710-8532'
               target='_blank'
+              rel='noreferrer'
               className='no-underline hover:underline'
             >
               <div className='flex'>
@@ -164,6 +167,7 @@ export default function Contact() {
             <a
               href='tel:514 805-5539'
               target='_blank'
+              rel='noreferrer'
               className='no-underline hover:underline'
             >
               <div className='flex'>
@@ -181,6 +185,7 @@ export default function Contact() {
             <a
               href='mailto:budget.cmg@gmail.com'
               target='_blank'
+              rel='noreferrer'
               className='no-underline hover:underline'
             >
               <div className='flex'>
