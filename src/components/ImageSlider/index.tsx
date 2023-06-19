@@ -67,36 +67,36 @@ export default function ImageSlider({ Image1, Image2 }: SliderProps) {
   return (
     <div
       ref={imageContainer}
-      className='select-none max-w-lg w-full mx-auto relative'
+      className='relative mx-auto w-full max-w-lg select-none'
     >
       <div className='flex justify-start'>
         <div
-          className='bg-black opacity-70 w-1/2 h-20 absolute z-10 top-72'
+          className='absolute top-72 z-10 h-20 w-1/2 bg-black opacity-70'
           onClick={handleClickImage1}
         >
-          <h3 className='text-center mt-3 opacity-100 text-white cursor-pointer hover:underline'>
+          <h3 className='mt-3 cursor-pointer text-center text-white opacity-100 hover:underline'>
             Avant
           </h3>
         </div>
         <Image
           src={Image2}
           alt=''
-          className='object-cover h-[23rem] pointer-events-none'
+          className='pointer-events-none h-[23rem] object-cover'
         />
       </div>
       <div className='flex justify-end'>
         <div
-          className='bg-black opacity-70 w-1/2 h-20 absolute z-10 top-72'
+          className='absolute top-72 z-10 h-20 w-1/2 bg-black opacity-70'
           onClick={handleClickImage2}
         >
-          <h3 className='text-center mt-3 opacity-100 text-white cursor-pointer hover:underline'>
+          <h3 className='mt-3 cursor-pointer text-center text-white opacity-100 hover:underline'>
             Après
           </h3>
         </div>
         <Image
           src={Image1}
           alt=''
-          className='object-cover h-[23rem] absolute inset-0 pointer-events-none'
+          className='pointer-events-none absolute inset-0 h-[23rem] object-cover'
           style={{
             clipPath: `polygon(
               0 0,
@@ -112,16 +112,16 @@ export default function ImageSlider({ Image1, Image2 }: SliderProps) {
         style={{ left: `${imageRevealFraction * 100}%` }}
       >
         <div className='relative h-full'>
-          <div className='absolute inset-y-0 bg-white w-0.5 -ml-px opacity-50'></div>
+          <div className='absolute inset-y-0 -ml-px w-0.5 bg-white opacity-50'></div>
           <div
             onMouseDown={handleMouseDown}
             onTouchMove={handleTouchMove}
-            className='h-12 w-12 -ml-6 -mt-6 rounded-full bg-white absolute top-1/2 shadow-xl flex items-center justify-center cursor-pointer'
+            className='absolute top-1/2 -ml-6 -mt-6 flex h-12 w-12 cursor-pointer items-center justify-center rounded-full bg-white shadow-xl'
             style={{ touchAction: 'none' }}
           >
             <HiSelector
               size={24}
-              className='text-gray-400 rotate-90 transform'
+              className='rotate-90 transform text-gray-400'
             />
           </div>
         </div>

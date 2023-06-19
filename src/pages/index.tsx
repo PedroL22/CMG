@@ -36,17 +36,17 @@ export default function Home() {
           <HeroCarousel />
         </section>
         <section
-          className='p-6 sm:py-16 sm:px-28 md:py-20 md:px-32'
+          className='p-6 sm:px-28 sm:py-16 md:px-32 md:py-20'
           id='a-propos'
         >
-          <div className='mx-auto lg:flex lg:gap-10 w-80 sm:w-[28rem] md:w-[36rem] lg:w-[55rem]'>
+          <div className='mx-auto w-80 sm:w-[28rem] md:w-[36rem] lg:flex lg:w-[55rem] lg:gap-10'>
             <Image
               src={Section2Image}
               alt='blue living room accent wall'
-              className='object-cover h-48 mt-2  sm:h-56 md:h-72 lg:h-80 lg:w-[27rem]'
+              className='mt-2 h-48 object-cover  sm:h-56 md:h-72 lg:h-80 lg:w-[27rem]'
             />
-            <div className='text-center-bug lg:text-left lg:-mt-11'>
-              <h2 className='pt-3 font-bold text-base sm:text-lg md:text-xl'>
+            <div className='text-center-bug lg:-mt-11 lg:text-left'>
+              <h2 className='pt-3 text-base font-bold sm:text-lg md:text-xl'>
                 NOUS CRÉONS DES OPPORTUNITÉS POUR RENDRE DES ENVIRONNEMENTS
                 BEAUX ET SPECTACULAIRES
               </h2>
@@ -63,10 +63,10 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='bg-[#494947] p-6 sm:py-16 sm:px-28 md:py-20 md:px-32'>
-          <div className='mx-auto lg:flex lg:gap-10 w-80 sm:w-[28rem] md:w-[36rem] lg:w-[55rem]'>
-            <div className='text-center-bug lg:text-right text-white'>
-              <h2 className='lg:pt-10 font-bold text-base sm:text-lg md:text-xl'>
+        <section className='bg-[#494947] p-6 sm:px-28 sm:py-16 md:px-32 md:py-20'>
+          <div className='mx-auto w-80 sm:w-[28rem] md:w-[36rem] lg:flex lg:w-[55rem] lg:gap-10'>
+            <div className='text-center-bug text-white lg:text-right'>
+              <h2 className='text-base font-bold sm:text-lg md:text-xl lg:pt-10'>
                 MISSION
               </h2>
               <p className='text-sm sm:text-base md:text-lg'>
@@ -80,26 +80,26 @@ export default function Home() {
             <Image
               src={Section3Image}
               alt='blue living room accent wall'
-              className='object-cover h-48 mb-2 lg:mb-0 sm:h-56 md:h-72 lg:h-80 lg:w-[27rem] border-4 border-white'
+              className='mb-2 h-48 border-4 border-white object-cover sm:h-56 md:h-72 lg:mb-0 lg:h-80 lg:w-[27rem]'
             />
           </div>
         </section>
-        <section className='p-6 sm:py-16 sm:px-28 md:py-20 md:px-32'>
-          <div className='mx-auto lg:flex lg:gap-10 w-80 sm:w-[28rem] md:w-[36rem] lg:w-[55rem]'>
+        <section className='p-6 sm:px-28 sm:py-16 md:px-32 md:py-20'>
+          <div className='mx-auto w-80 sm:w-[28rem] md:w-[36rem] lg:flex lg:w-[55rem] lg:gap-10'>
             <Image
               src={Section4Image}
               alt='blue living room accent wall'
-              className='object-cover h-48 mt-2 sm:h-56 md:h-72 lg:h-80 lg:w-[27rem]'
+              className='mt-2 h-48 object-cover sm:h-56 md:h-72 lg:h-80 lg:w-[27rem]'
             />
             <div className='text-center-bug lg:text-left'>
-              <h2 className='pt-3 font-bold text-base sm:text-lg md:text-xl'>
+              <h2 className='pt-3 text-base font-bold sm:text-lg md:text-xl'>
                 VISION
               </h2>
               <p className='text-sm sm:text-base md:text-lg'>
                 Devenir une entreprise leader dans notre segment dans la région
                 de Montréal, offrant aux gens inspiration, bien-être et joie.
               </p>
-              <h2 className='pt-3 font-bold text-base sm:text-lg md:text-xl'>
+              <h2 className='pt-3 text-base font-bold sm:text-lg md:text-xl'>
                 VALEURS
               </h2>
               <p className='text-sm sm:text-base md:text-lg'>

@@ -63,9 +63,9 @@ export default function Projects() {
           href='/favicon.png'
         />
       </Head>
-      <div className='bg-black fixed z-20 w-full font-sans header h-16 md:h-32' />
+      <div className='header fixed z-20 h-16 w-full bg-black font-sans md:h-32' />
       <ImageModal show={modal} />
-      <div className='pt-24 pb-4 md:pt-44 px-3 max-w-5xl mx-auto flex flex-col gap-3 md:grid md:grid-cols-2 min-h-screen'>
+      <div className='mx-auto flex min-h-screen max-w-5xl flex-col gap-3 px-3 pb-4 pt-24 md:grid md:grid-cols-2 md:pt-44'>
         <ImageSlider
           Image1={image1}
           Image2={image2}

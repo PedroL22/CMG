@@ -7,10 +7,10 @@ import HeroImage3 from '../../images/orange-living-room-accent-wall3.jpg'
 
 export default function HeroCarousel() {
   return (
-    <div className='flex justify-center items-center'>
+    <div className='flex items-center justify-center'>
       <div className='absolute z-10'>
         <div className='relative flex flex-col'>
-          <h1 className='text-white text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center mx-[15vw] max-w-[900px]'>
+          <h1 className='mx-[15vw] max-w-[900px] text-center text-lg font-bold text-white sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl'>
             Services de RÉNOVATION RÉSIDENTIELLE
           </h1>
         </div>
@@ -18,30 +18,30 @@ export default function HeroCarousel() {
       <Carousel
         fade
         interval={4500}
-        className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] mx-auto carousel-arrows'
+        className='carousel-arrows mx-auto h-[30vh] w-full sm:h-[40vh] md:h-[720px]'
       >
         <Carousel.Item>
-          <div className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] absolute'></div>
+          <div className='absolute h-[30vh] w-full sm:h-[40vh] md:h-[720px]'></div>
           <Image
             src={HeroImage1}
             alt=''
-            className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] object-cover'
+            className='h-[30vh] w-full object-cover sm:h-[40vh] md:h-[720px]'
           />
         </Carousel.Item>
         <Carousel.Item>
-          <div className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] absolute'></div>
+          <div className='absolute h-[30vh] w-full sm:h-[40vh] md:h-[720px]'></div>
           <Image
             src={HeroImage2}
             alt=''
-            className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] object-cover'
+            className='h-[30vh] w-full object-cover sm:h-[40vh] md:h-[720px]'
           />
         </Carousel.Item>
         <Carousel.Item>
-          <div className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] absolute'></div>
+          <div className='absolute h-[30vh] w-full sm:h-[40vh] md:h-[720px]'></div>
           <Image
             src={HeroImage3}
             alt=''
-            className='w-full h-[30vh] sm:h-[40vh] md:h-[720px] object-cover'
+            className='h-[30vh] w-full object-cover sm:h-[40vh] md:h-[720px]'
           />
         </Carousel.Item>
       </Carousel>

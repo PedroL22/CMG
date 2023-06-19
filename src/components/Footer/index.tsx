@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className='font-sans h-20 bg-[#202020]'>
+    <footer className='h-20 bg-[#202020] font-sans'>
       <div className='mx-auto w-80 sm:w-[28rem] md:w-[36rem] lg:w-[55rem]'>
-        <div className='flex justify-between mx-auto pt-4 px-16 md:px-36 lg:px-72'>
+        <div className='mx-auto flex justify-between px-16 pt-4 md:px-36 lg:px-72'>
           {/* <div>
             <a
               href='#'
@@ -46,11 +46,11 @@ export default function Footer() {
             </a>
           </div> */}
         </div>
-        <p className='text-white text-center pt-2 text-xs'>
+        <p className='pt-2 text-center text-xs text-white'>
           Made with <span className='text-red-600'>♥</span> by{' '}
           <a
             href='https://github.com/PedroL22/'
-            className='text-white font-medium no-underline'
+            className='font-medium text-white no-underline'
           >
             Pedro Lucena
           </a>

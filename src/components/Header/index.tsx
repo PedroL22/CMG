@@ -27,20 +27,20 @@ export default function Header() {
   }
 
   return isMobile ? (
-    <div className='fixed z-30 w-full font-sans header h-16'>
-      <div className='max-w-screen-xl mx-auto'>
+    <div className='header fixed z-30 h-16 w-full font-sans'>
+      <div className='mx-auto max-w-screen-xl'>
         <div className='flex justify-between'>
           <Link href='/'>
             <Image
               src={Logo}
               alt='logo'
               placeholder='blur'
-              className='w-16 h-16 object-cover mx-1'
+              className='mx-1 h-16 w-16 object-cover'
             />
           </Link>
-          <div className='flex -ml-[100vw]'>
+          <div className='-ml-[100vw] flex'>
             {isOpen ? (
-              <div className='flex flex-col h-screen w-screen text-center bg-black opacity-80'>
+              <div className='flex h-screen w-screen flex-col bg-black text-center opacity-80'>
                 <div className='justify-between'>
                   <div />
                   <IoMdClose
@@ -48,7 +48,7 @@ export default function Header() {
                     onClick={() => {
                       setIsOpen(false)
                     }}
-                    className='text-white cursor-pointer float-right m-3'
+                    className='float-right m-3 cursor-pointer text-white'
                   />
                 </div>
                 <Link
@@ -57,7 +57,7 @@ export default function Header() {
                   onClick={() => {
                     setIsOpen(false)
                   }}
-                  className='uppercase no-underline text-white text-2xl font-semibold mx-2 my-4'
+                  className='mx-2 my-4 text-2xl font-semibold uppercase text-white no-underline'
                 >
                   accueil
                 </Link>
@@ -67,7 +67,7 @@ export default function Header() {
                   onClick={() => {
                     setIsOpen(false)
                   }}
-                  className='uppercase no-underline text-white text-2xl font-semibold mx-2 my-4'
+                  className='mx-2 my-4 text-2xl font-semibold uppercase text-white no-underline'
                 >
                   à propos
                 </Link>
@@ -76,7 +76,7 @@ export default function Header() {
                   onClick={() => {
                     setIsOpen(false)
                   }}
-                  className='uppercase no-underline text-white text-2xl font-semibold mx-2 my-4'
+                  className='mx-2 my-4 text-2xl font-semibold uppercase text-white no-underline'
                 >
                   projets
                 </Link>
@@ -85,7 +85,7 @@ export default function Header() {
                   onClick={() => {
                     setIsOpen(false)
                   }}
-                  className='uppercase no-underline text-white text-2xl font-semibold mx-2 my-4'
+                  className='mx-2 my-4 text-2xl font-semibold uppercase text-white no-underline'
                 >
                   contact
                 </Link>
@@ -96,7 +96,7 @@ export default function Header() {
                 onClick={() => {
                   setIsOpen(true)
                 }}
-                className='text-white cursor-pointer m-3'
+                className='m-3 cursor-pointer text-white'
               />
             )}
           </div>
@@ -104,41 +104,41 @@ export default function Header() {
       </div>
     </div>
   ) : (
-    <div className='fixed z-30 w-full font-sans header h-32'>
-      <div className='max-w-screen-xl mx-auto'>
+    <div className='header fixed z-30 h-32 w-full font-sans'>
+      <div className='mx-auto max-w-screen-xl'>
         <div className='flex justify-between'>
           <Link href='/'>
             <Image
               src={Logo}
               alt='logo'
               placeholder='blur'
-              className='w-28 h-28 object-cover mx-4 mt-2'
+              className='mx-4 mt-2 h-28 w-28 object-cover'
             />
           </Link>
           <div className='flex px-10 py-12'>
             <Link
               scroll={false}
               href='/#accueil'
-              className='uppercase no-underline text-white text-2xl font-semibold mx-2 whitespace-nowrap'
+              className='mx-2 whitespace-nowrap text-2xl font-semibold uppercase text-white no-underline'
             >
               accueils
             </Link>
             <Link
               scroll={false}
               href='/#a-propos'
-              className='uppercase no-underline text-white text-2xl font-semibold mx-2 whitespace-nowrap'
+              className='mx-2 whitespace-nowrap text-2xl font-semibold uppercase text-white no-underline'
             >
               à propos
             </Link>
             <Link
               href='/projects'
-              className='uppercase no-underline text-white text-2xl font-semibold mx-2 whitespace-nowrap'
+              className='mx-2 whitespace-nowrap text-2xl font-semibold uppercase text-white no-underline'
             >
               projets
             </Link>
             <Link
               href='/contact'
-              className='uppercase no-underline text-white text-2xl font-semibold mx-2 whitespace-nowrap'
+              className='mx-2 whitespace-nowrap text-2xl font-semibold uppercase text-white no-underline'
             >
               contact
             </Link>

@@ -36,7 +36,7 @@ export default function Contact() {
   }, [message])
 
   return (
-    <div className='font-sans max-w-screen-3xl'>
+    <div className='max-w-screen-3xl font-sans'>
       <Head>
         <title>Contact - Custom Peinture et Nettoyage</title>
         <meta
@@ -60,9 +60,9 @@ export default function Contact() {
           href='/favicon.png'
         />
       </Head>
-      <div className='bg-black fixed z-10 w-full font-sans header h-16 md:h-32' />
+      <div className='header fixed z-10 h-16 w-full bg-black font-sans md:h-32' />
       <div className='flex min-h-[90vh]'>
-        <div className='pt-24 md:pt-44 mx-auto md:flex gap-11'>
+        <div className='mx-auto gap-11 pt-24 md:flex md:pt-44'>
           <div className='max-w-xs'>
             <h2 className='max-w-sm text-2xl'>
               Appelez-nous ou remplissez le formulaire pour démarrer votre
@@ -71,11 +71,11 @@ export default function Contact() {
             <form
               ref={form as any}
               onSubmit={sendEmail}
-              className='flex flex-col max-w-sm'
+              className='flex max-w-sm flex-col'
             >
               <label className='flex gap-2'>
                 <input
-                  className='bg-gray-200 px-3 py-3 my-1 rounded outline-none max-w-[49%] border-[1px] focus:border-gray-400'
+                  className='my-1 max-w-[49%] rounded border-[1px] bg-gray-200 px-3 py-3 outline-none focus:border-gray-400'
                   id='name'
                   type='text'
                   placeholder='Name'
@@ -83,7 +83,7 @@ export default function Contact() {
                   required
                 />
                 <input
-                  className='bg-gray-200 px-3 py-3 my-1 rounded outline-none max-w-[49%] border-[1px] focus:border-gray-400'
+                  className='my-1 max-w-[49%] rounded border-[1px] bg-gray-200 px-3 py-3 outline-none focus:border-gray-400'
                   id='email'
                   type='email'
                   placeholder='Email Address'
@@ -93,7 +93,7 @@ export default function Contact() {
               </label>
               <label>
                 <input
-                  className='block bg-gray-200 px-3 py-3 my-1 rounded outline-none w-full border-[1px] focus:border-gray-400'
+                  className='my-1 block w-full rounded border-[1px] bg-gray-200 px-3 py-3 outline-none focus:border-gray-400'
                   id='subject'
                   type='text'
                   placeholder='Subject'
@@ -101,7 +101,7 @@ export default function Contact() {
                   required
                 />
                 <textarea
-                  className='bg-gray-200 px-3 py-3 my-1 rounded outline-none w-full border-[1px] focus:border-gray-400 resize-none'
+                  className='my-1 w-full resize-none rounded border-[1px] bg-gray-200 px-3 py-3 outline-none focus:border-gray-400'
                   id='message'
                   placeholder='Message'
                   name='message'
@@ -109,15 +109,15 @@ export default function Contact() {
                 />
               </label>
               <button
-                className='bg-orange-500 hover:bg-orange-600 active:bg-orange-700 text-white font-semibold py-2 my-1 rounded transition-all duration-250 ease-in'
+                className='duration-250 my-1 rounded bg-orange-500 py-2 font-semibold text-white transition-all ease-in hover:bg-orange-600 active:bg-orange-700'
                 type='submit'
               >
                 Submit
               </button>
             </form>
           </div>
-          <div className='max-w-xs my-4'>
-            <h2 className='font-semibold text-base uppercase'>
+          <div className='my-4 max-w-xs'>
+            <h2 className='text-base font-semibold uppercase'>
               contactez-nous
             </h2>
             <a
@@ -130,7 +130,7 @@ export default function Contact() {
                   size={14}
                   className='mt-1'
                 />
-                <h2 className='flex font-normal text-sm ml-0.5'>Whatsapp</h2>
+                <h2 className='ml-0.5 flex text-sm font-normal'>Whatsapp</h2>
               </div>
             </a>
             <a
@@ -143,11 +143,11 @@ export default function Contact() {
                   size={14}
                   className='mt-1'
                 />
-                <h2 className='flex font-normal text-sm ml-1'>Facebook</h2>
+                <h2 className='ml-1 flex text-sm font-normal'>Facebook</h2>
               </div>
             </a>
             <hr />
-            <h2 className='font-semibold text-base uppercase'>appelez-nous</h2>
+            <h2 className='text-base font-semibold uppercase'>appelez-nous</h2>
             <a
               href='tel:514 710-8532'
               target='_blank'
@@ -156,9 +156,9 @@ export default function Contact() {
               <div className='flex'>
                 <AiOutlinePhone
                   size={18}
-                  className='mt-0.5 -ml-0.5'
+                  className='-ml-0.5 mt-0.5'
                 />
-                <h2 className='flex font-normal text-sm'>514 710-8532</h2>
+                <h2 className='flex text-sm font-normal'>514 710-8532</h2>
               </div>
             </a>
             <a
@@ -169,13 +169,13 @@ export default function Contact() {
               <div className='flex'>
                 <AiOutlinePhone
                   size={18}
-                  className='mt-0.5 -ml-0.5'
+                  className='-ml-0.5 mt-0.5'
                 />
-                <h2 className='flex font-normal text-sm'>514 805-5539</h2>
+                <h2 className='flex text-sm font-normal'>514 805-5539</h2>
               </div>
             </a>
             <hr />
-            <h2 className='font-semibold text-base uppercase'>
+            <h2 className='text-base font-semibold uppercase'>
               envoyez-nous un email
             </h2>
             <a
@@ -188,7 +188,7 @@ export default function Contact() {
                   size={16}
                   className='mt-0.5'
                 />
-                <h2 className='flex font-normal text-sm ml-0.5'>
+                <h2 className='ml-0.5 flex text-sm font-normal'>
                   budget.cmg@gmail.com
                 </h2>
               </div>
